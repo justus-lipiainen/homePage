@@ -21,7 +21,7 @@ function ChatRoom() {
 
         socket.on("connect", () => {
             socket.on("message", (data) => {
-                addMessage(data.sendet, data.msg)
+                addMessage(data.sender, data.msg)
             })
         })
     })
