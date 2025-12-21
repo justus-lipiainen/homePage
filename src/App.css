@@ -31,6 +31,76 @@
     background-color: #111111;
 }
 
-#msgList{
-    justify-items: end;
+#msgList {
+    display: grid;
+    justify-items: center;
+}
+
+#msgList div {
+    background-color: #0a21a4;
+    border-radius: 15px;
+    width: 50%;
+    text-align: center;
+    margin: 5px;
+}
+
+#msgList .serverMsg {
+    background-color: #7fe9b7;
+}
+
+#chatInputs {
+    display: grid;
+    /* This creates space for the input, and then icons/buttons on the right */
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 12px;
+
+    /* Positioning */
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    /* Gemini Styling */
+    width: 60%;
+    max-width: 800px;
+    padding: 8px 16px;
+    background-color: #bfccdb;
+    /* Light off-white/blue tint */
+    border-radius: 28px;
+    /* The "Pill" shape */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s ease;
+}
+
+/* Hover/Focus effect like Gemini */
+#chatInputs:focus-within {
+    background-color: #7d96b2;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+#chatInputs input {
+    border: none;
+    background: transparent;
+    padding: 12px 8px;
+    font-size: 16px;
+    outline: none;
+    /* Removes the default blue browser border */
+    color: #1f1f1f;
+}
+
+#chatInputs button {
+    background-color: #0b57d0;
+    /* Google Blue */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#chatInputs button:hover {
+    background-color: #0842a0;
 }
