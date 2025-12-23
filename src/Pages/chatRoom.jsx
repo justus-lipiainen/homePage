@@ -27,7 +27,7 @@ function ChatRoom() {
                     console.log(inputValue)
                 }
             })
-            $(document).keypress(() => {
+            $(document).on("keypress", () => {
                 if (event.which == 13) {
                     const inputValue = $("#messageInput").val();
                     if (inputValue.trim(" ") != "") {
@@ -45,8 +45,9 @@ function ChatRoom() {
             socket.off("disconnect");
             socket.off("chatMessage");
             socket.disconnect();
+            console.log("disconnected")
         };
-    })
+    }, [roomId])
 
     return (
         <>

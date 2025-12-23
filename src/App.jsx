@@ -9,9 +9,9 @@ function App() {
         <Router>
             <Routes>
                 <Route path="/" element={<Navigate to="/home" />} />
-                <Route path="/home" element={<Home />} />
-                <Route path="/ChatMenu" element={<ChatMenu />} />
-                <Route path="/ChatRoom/:roomId" element={<ChatRoom />} />
+                <Route exact path="/home" element={<Home />} />
+                <Route exact path="/chatmenu" element={<ChatMenu />} />
+                <Route exact path="/ChatRoom/:roomId" element={<ChatRoom />} />
             </Routes>
         </Router>
     );

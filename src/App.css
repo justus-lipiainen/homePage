@@ -104,3 +104,29 @@
 #chatInputs button:hover {
     background-color: #0842a0;
 }
+
+#roomList {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: repeat(minMax(100px, 1000px));
+    justify-content: center;
+    margin: 5px;
+}
+
+#roomList .Room {
+    text-align:center;
+    justify-content: center;
+    background-color: #535a5b;
+    margin: 5px;
+}
+
+
+#roomList .Room:hover {
+    justify-content: center;
+    background-color: #69797b;
+    margin: 5px;
+}
+
+#roomList .Room img {
+    filter: grayscale(100%);
+}
