@@ -15,7 +15,7 @@ function ChatRoom() {
     }
 
     useEffect(() => {
-        const socket = io.connect("http://localhost:6767")
+        const socket = io.connect("https://test-d2mf.onrender.com")
 
         socket.on("connect", () => {
             console.log(roomId)
