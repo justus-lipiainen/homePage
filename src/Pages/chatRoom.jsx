@@ -51,8 +51,6 @@ function ChatRoom() {
 
     return (
         <>
-            <Navbar />
-            <p>Chat Room</p>
             <div id="chatInputs">
                 <input id="messageInput"></input>
                 <button id="messageSend">Send</button>

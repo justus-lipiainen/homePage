@@ -12,6 +12,12 @@ function Navbar() {
                 <li onClick={() => {Navigate("/ChatMenu")}}>
                     <p>ChatRooms</p>
                 </li>
+                <li onClick={() => {Navigate("/WhosThatPokemon")}}>
+                    <p>Who's That Pokemon</p>
+                </li>
+                <li onClick={() => {Navigate("/SiwanKovimmat")}}>
+                    <p>Siwan Seksikkäimmät</p>
+                </li>
             </ul>
         </>
     )

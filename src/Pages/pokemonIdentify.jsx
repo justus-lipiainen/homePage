@@ -1,11 +1,10 @@
 import Navbar from "../components.jsx/navbar";
 
-function ChatMenu() {
+function WhosThatPokemon() {
     return (
         <>
-            <ChatMenu />
         </>
     )
 }
 
-export default ChatMenu
+export default WhosThatPokemon
