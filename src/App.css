@@ -131,3 +131,46 @@
 #roomList .Room img {
     filter: grayscale(100%);
 }
+
+#portfolio {
+    display: grid;
+    justify-items: center;
+}
+
+#portfolio .infoBox {
+    border-style:solid;
+    border-color: #2a3134;
+    background-color: #2a3134;
+    border-width: 2vw;
+    border-radius: 15px;
+    text-align: center;
+    margin: 2vh;
+    width:65vw;
+    height: 45vh;
+}
+
+#portfolio .infoBox .title {
+    position:relative;
+    font-size: 3vw;
+    bottom: -20vh;
+    justify-self: left;
+}
+
+#portfolio .infoBox .paragraph {
+    position: relative;
+    font-size: 2vw;
+    bottom: -20vh;
+    justify-self: left;
+}
+
+#portfolio #project1 {
+    justify-self: left;
+}
+
+#portfolio #project2 {
+    justify-self: right;
+}
+
+#portfolio #project3 {
+    justify-self: left;
+}

@@ -16,7 +16,7 @@ function Navbar() {
                     <p>Who's That Pokemon</p>
                 </li>
                 <li onClick={() => {Navigate("/SiwanKovimmat")}}>
-                    <p>Siwan Seksikkäimmät</p>
+                    <p>Webstore</p>
                 </li>
             </ul>
         </>
