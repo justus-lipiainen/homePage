@@ -137,6 +137,19 @@
     justify-items: center;
 }
 
+@keyframes loadSize{
+    0% {
+        opacity: 10%;
+        width: 30vw;
+        height: 20vh;
+    };
+    100% {
+        opacity: 100%;
+        width:65vw;
+        height: 45vh;
+    };
+}
+
 #portfolio .infoBox {
     border-style:solid;
     border-color: #2a3134;
@@ -147,6 +160,15 @@
     margin: 2vh;
     width:65vw;
     height: 45vh;
+    animation-name: loadSize;
+    animation-duration: 1s;
+}
+
+#portfolio .infoBox:hover{
+    border-color: #2c2a34;
+    background-color: #2c2a34;
+    border-width: calc(2.5vw);
+    transition: all 0.2s ease-in-out;
 }
 
 #portfolio .infoBox .title {
